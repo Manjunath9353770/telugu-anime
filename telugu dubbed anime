@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="te">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>తెలుగు అనిమే వరల్డ్ - ఉచిత డబ్బింగ్</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { 
+      font-family: 'Noto Sans Telugu', sans-serif; 
+      background: linear-gradient(135deg, #0f0c29, #302b63, #0f0c29); 
+      color: #fff; 
+      min-height: 100vh; 
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background: rgba(0,0,0,0.5);
+      border-radius: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(255,107,107,0.3);
+    }
+    h1 { 
+      font-size: 2.8rem; 
+      color: #ff6b6b; 
+      text-shadow: 0 0 15px #ff6b6b;
+      margin-bottom: 10px;
+    }
+    .subtitle { font-size: 1.2rem; color: #a29bfe; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .anime-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .anime-card {
+      background: rgba(48, 43, 99, 0.8);
+      border-radius: 18px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      backdrop-filter: blur(10px);
+      border: 1px solid #ff6b6b33;
+    }
+    .anime-card:hover {
+      transform: translateY(-12px);
+      box-shadow: 0 20px 40px rgba(255,107,107,0.4);
+    }
+    .anime-img {
+      height: 180px;
+      background: #555;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .play-btn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      background: #ff6b6b;
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      opacity: 0;
+      transition: 0.3s;
+    }
+    .anime-card:hover .play-btn { opacity: 1; }
+    .anime-info {
+      padding: 18px;
+      text-align: center;
+    }
+    .anime-title {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+      color: #ff6b6b;
+    }
+    .anime-ep { 
+      color: #a29bfe; 
+      font-size: 0.95rem;
+      margin: 8px 0;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff6b6b;
+      color: white;
+      padding: 10px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 8px 4px 0;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+    .btn:hover { 
+      background: #ff5252; 
+      transform: scale(1.05);
+    }
+    .btn-tg { background: #2aabee; }
+    .btn-tg:hover { background: #1c92d2; }
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+      color: #777;
+      font-size: 0.9rem;
+    }
+    .warning {
+      background: rgba(255,107,107,0.15);
+      border: 1px solid #ff6b6b;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 30px 0;
+      font-size: 0.9rem;
+      color: #ffcccc;
+    }
+    @media *(max-width: 768px)* {
+      h1 { font-size: 2.2rem; }
+      .anime-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>తెలుగు అనిమే వరల్డ్</h1>
+      <p class="subtitle">తెలుగులో డబ్ చేసిన అత్యుత్తమ అనిమే సిరీస్ & మూవీస్</p>
+    </header>
+
+    <div class="warning">
+      ⚠ <strong>హెచ్చరిక:</strong> ఈ సైట్ లోని లింకులు బహిరంగ టెలిగ్రామ్ ఛానల్స్ కు మాత్రమే. పైరసీ కంటెంట్ డౌన్‌లోడ్ చేయడం చట్టవిరుద్ధం. దయచేసి <strong>Crunchyroll, Netflix</strong> వంటి లీగల్ ప్లాట్‌ఫారమ్‌లను ఉపయోగించండి.
+    </div>
+
+    <div class="anime-grid">
+      <!-- Demon Slayer -->
+      <div class="anime-card">
+        <div class="anime-img" style="background-image: url('https://image.api.playstation.com/vod/image/hero/0000000000000000000000000000000000000000000000000000000000000000_00.png');">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="anime-info">
+          <div class="anime-title">డెమన్ స్లేయర్</div>
+          <div class="anime-ep">సీజన్ 1-4 | 4K తెలుగు డబ్</div>
+          <a href="https://t.me/AnimeTelugu" class="btn btn-tg">టెలిగ్రామ్</a>
+          <a href="#" class="btn">వివరాలు</a>
+        </div>
+      </div>
+
+      <!-- Naruto Shippuden -->
+      <div class="anime-card">
+        <div class="anime-img" style="background-image: url('https://wallpapercave.com/wp/wp1833450.jpg');">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="anime-info">
+          <div class="anime-title">నారుటో షిప్పూడెన్</div>
+          <div class="anime-ep">720+ ఎపిసోడ్స్ | తెలుగు డబ్</div>
+          <a href="https://t.me/teluguanimeworld" class="btn btn-tg">టెలిగ్రామ్</a>
+          <a href="#" class="btn">వివరాలు</a>
+        </div>
+      </div>
+
+      <!-- One Piece -->
+      <div class="anime-card">
+        <div class="anime-img" style="background-image: url('https://wallpapercave.com/wp/wp5125974.jpg');">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="anime-info">
+          <div class="anime-title">వన్ పీస్</div>
+          <div class="anime-ep">1000+ ఎపిసోడ్స్ | తెలుగు</div>
+          <a href="https://t.me/animerulz_telugu" class="btn btn-tg">టెలిగ్రామ్</a>
+          <a href="#" class="btn">వివరాలు</a>
+        </div>
+      </div>
+
+      <!-- Jujutsu Kaisen -->
+      <div class="anime-card">
+        <div class="anime-img" style="background-image: url('https://wallpapercave.com/wp/wp8614963.jpg');">
+          <div class="play-btn">▶</div>
+        </div>
+        <div class="anime-info">
+          <div class="anime-title">జుజుత్సు కైసెన్</div>
+          <div class="anime-ep">సీజన్ 1-2 | తెలుగు డబ్</div>
+          <a href="https://t.me/anime_movies_telugu_dubbed" class="btn btn-tg">టెలిగ్రామ్</a>
+          <a href="#" class="btn">వివరాలు</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 తెలుగు అనిమే వరల్డ్ | <a href="#" style="color:#a29bfe;">పరిచయం</a> | <a href="#" style="color:#a29bfe;">గోప్యతా విధానం</a></p>
+      <p style="margin-top:10px; font-size:0.8rem;">మీ డేటా సురక్షితం. మీరు ఏ ఛానల్‌కి వెళ్తున్నారో మీ ఇష్టం.</p>
+    </footer>
+  </div>
+</body>
+</html>
